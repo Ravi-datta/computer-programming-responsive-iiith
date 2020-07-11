@@ -122,7 +122,8 @@ window.view = {
 		for ( i = 0 ; i < size ; i++)
 		{
 			var random = Math.floor(Math.random()*15)
-			this.matrixA.push(random)
+			var val=i+1;
+			this.matrixA.push(val)
 		}
 		this.resetRowsAndCols()
 		this.disableButton('row')
@@ -138,7 +139,8 @@ window.view = {
 		for ( i = 0 ; i < size ; i++)
 		{
 			var random = Math.floor(Math.random()*15)
-			this.matrixB.push(random)
+			var valu=i+1;
+			this.matrixB.push(valu)
 		}
 		this.disableButton('generateB')
 		this.changeClass( 'generateB', 'buttonDisable GenerateValueButton show' )
